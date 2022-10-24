@@ -18,9 +18,9 @@
     <select name="font" id="font" onchange="changeFont()">
       <option value="Arial">Arial</option>
       <option value="Monaco">Monaco</option>
-      <option value="Bradley Hand">Bradley Hand</option>
+      <option value="bradleyHand">Bradley Hand</option>
     </select>
-    
+   
 
     <script>
      
@@ -40,11 +40,11 @@
          * o tipo da fonte por meio do HTML select.
          *
          */
-        let fonte = document.getElementById("font")
-        let p = document.getElementById("text")
-        p.style.fontFamily = fonte.value;
-        localStorage.setItem("font", fonte.value)
-
+        let imput = document.getElementById("font")
+        let title = document.getElementById("text")
+        title.style.fontFamily = imput.value
+        localStorage.setItem("font", imput.value)
+        
         
         
       }
